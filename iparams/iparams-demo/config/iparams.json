@@ -1,0 +1,86 @@
+{
+    "domain_name": {
+        "display_name": "Domain Name",
+        "description": "Please enter your domain name",
+        "type": "domain",
+        "type_attributes": {
+            "product": "freshservice"
+        },
+        "required": true
+    },
+    "api_key": {
+        "display_name": "API Key",
+        "description": "Please enter your api_key",
+        "type": "api_key",
+        "secure": true,
+        "required": true,
+        "type_attributes": {
+            "product": "freshservice"
+        }
+    },
+    "view_ticket_status": {
+        "display_name": "View ticket status",
+        "description": "Check this option if you want to see ticket status",
+        "type": "checkbox",
+        "default_value": true
+    },
+    "agency": {
+        "display_name": "Secret Agency",
+        "description": "Please select the agency ",
+        "type": "dropdown",
+        "options": [
+            "S.H.I.E.L.D",
+            "HYDRA"
+        ],
+        "default_value": "S.H.I.E.L.D",
+        "events": [
+            {
+                "change": "agencyChange"
+            }
+        ]
+    },
+    "agent_email": {
+        "display_name": "Email Address",
+        "description": "Please enter your S.H.I.E.L.D email address",
+        "type": "email",
+        "required": true
+    },
+    "agent_name": {
+        "display_name": "Agent name",
+        "description": "Please enter your name",
+        "type": "text"
+    },
+    "agent_phone": {
+        "display_name": "Agent phone number",
+        "description": "Please enter your phone number",
+        "type": "phone_number"
+    },
+    "avengers": {
+        "display_name": "Avenger team",
+        "description": "Please select your Avengers team",
+        "type": "multiselect",
+        "options": [
+            "Captain America",
+            "Iron man",
+            "Hulk",
+            "Thor",
+            "Black Widow",
+            "Hawkeye"
+        ],
+        "default_value": "Captain America"
+    },
+    "new_avengers": {
+        "display_name": "New Avenger team",
+        "description": "Please select your Avengers team",
+        "type": "radio",
+        "options": [
+            "Black Panther",
+            "Spiderman",
+            "She-Hulk",
+            "Falcon",
+            "War Machine",
+            "Vision"
+        ],
+        "default_value": "Spiderman"
+    }
+}
