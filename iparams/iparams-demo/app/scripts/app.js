@@ -18,7 +18,6 @@ document.onreadystatechange = function () {
 async function renderUI(client) {
   try {
     let iparams_values = await getIparamValues(client);
-    console.log(iparams_values)
     if (iparams_values.agency === "S.H.I.E.L.D") {
       document.getElementById('agent_name').innerHTML = `${iparams_values.agent_name}`
       document.getElementById('agent_email').innerHTML = `Email : ${iparams_values.agent_email}`
